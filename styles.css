@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #121212; /* Base dark color */
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('pexels-cottonbro-6896179.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.title {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background: #ff4b5c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #ff1f39;
+}
+
+/* Explore Section */
+.explore-section {
+  padding: 60px 20px;
+  background: #1f1f1f;
+  text-align: center;
+}
+
+.explore-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ff4b5c;
+}
+
+.explore-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.cta-button-secondary {
+  padding: 10px 25px;
+  background: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cta-button-secondary:hover {
+  transform: scale(1.1);
+}
+
+/* Signup Section */
+.signup-section {
+  padding: 60px 20px;
+  background: #292929;
+  text-align: center;
+}
+
+.signup-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #4caf50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input, form button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+form input {
+  background: #444;
+  color: #fff;
+}
+
+.signup-button {
+  background: #ff4b5c;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+  background: #ff1f39;
+}
+
+/* Footer Section */
+.footer {
+  background: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer a {
+  color: #ff4b5c;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer span {
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer small {
+  display: block;
+  margin-top: 10px;
+  color: #bbb;
+}
