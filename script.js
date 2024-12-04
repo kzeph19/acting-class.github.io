@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(() => callback("US"));
     },
     utilsScript:
-      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js", // for validation and formatting
+      
+      "https://cdn.jsdelivr.net/npm/intl-tel-input@24.8.2/build/js/utils.js", // for validation and formatting
   });
 });
