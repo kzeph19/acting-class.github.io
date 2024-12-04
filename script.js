@@ -31,3 +31,30 @@ document.addEventListener("DOMContentLoaded", () => {
     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js",
   });
 });
+
+
+document.getElementById("registrationForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const phoneNumber = document.getElementById("phone").value;
+
+    const data = {
+      name: name,
+      phoneNumber: phoneNumber,
+    };
+
+    // Replace the URL below with your Google Apps Script Web App URL
+    const scriptURL = "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec";
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((response) => response.text())
+      .then((response) => {
+        alert("Your registration was successful!");
+        document.getElementById("registrationForm").reset();
+      })
+      .catch((error) => console.error("Error!", error.message));
+  });
