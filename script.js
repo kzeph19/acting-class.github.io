@@ -44,7 +44,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     };
 
     // Replace the URL below with your Google Apps Script Web App URL
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyNoAEeT9OOIrkl_-SZyjHUMNjqG10Kn1ImRK3AMThoF6PE-tvgtGbr8Yi9gH9AijSDUA";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyNoAEeT9OOIrkl_-SZyjHUMNjqG10Kn1ImRK3AMThoF6PE-tvgtGbr8Yi9gH9AijSDUA/exec";
 
     fetch(scriptURL, {
       method: "POST",
